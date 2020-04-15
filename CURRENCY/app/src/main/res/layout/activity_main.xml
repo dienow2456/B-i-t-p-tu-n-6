@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_chuc_nang"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btn_chuc_nang"
+            android:layout_alignBottom="@id/btn_chuc_nang"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btn_chuc_nang"
+            android:gravity="center_vertical"
+            android:text="Currency"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_donvi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_chuc_nang"
+            android:layout_alignBottom="@id/tvResult"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="$"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_chuc_nang"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_donvi1"
+            android:gravity="center_vertical|left"
+            android:text="0"
+            android:textSize="50px" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_donvi1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_donvi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner1"
+            android:layout_alignBottom="@id/tvResult2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="đ"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/tvResult2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_donvi1"
+            android:gravity="center_vertical|left"
+            android:text="0"
+            android:textSize="50px" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_donvi2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_quy_doi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1 USD = 23,550.00 VND"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_updated_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_quy_doi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Updated Today 00:00 AM"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_update_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_updated_last"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Update rates" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/dauCham"
+        android:text="."
+        android:layout_marginRight="20px"
+        android:layout_width="330px"
+        android:layout_height="150px"
+        android:textSize="70px"
+        android:layout_alignLeft="@id/So3"
+        android:layout_alignRight="@id/So3"
+        android:layout_below="@id/So3"
+        android:layout_alignParentRight='true'/>
+    <Button
+        android:id="@+id/So0"
+        android:text="0"
+        android:layout_width="330px"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20px"
+        android:textSize="70px"
+        android:layout_toLeftOf='@id/dauCham'
+        android:layout_alignBottom='@id/dauCham'
+        android:layout_alignTop='@id/dauCham'/>
+
+    <Button
+        android:id="@+id/So3"
+        android:text="3"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:layout_marginRight="20px"
+        android:layout_alignLeft="@id/So6"
+        android:layout_alignRight="@id/So6"
+        android:layout_below="@id/So6"
+        android:textSize="70px"
+        android:layout_alignParentRight='true'
+
+        />
+    <Button
+        android:id="@+id/So2"
+        android:text="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="70px"
+        android:layout_toLeftOf='@id/So3'
+        android:layout_alignBottom='@id/So3'
+        android:layout_alignTop='@id/So3'
+        android:layout_alignRight="@id/So0"
+        android:layout_alignLeft="@id/So0"/>
+    <Button
+        android:id="@+id/So1"
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:textSize="70px"
+        android:layout_toLeftOf='@id/So2'
+        android:layout_alignTop='@id/So2'
+        android:layout_alignBottom="@id/So2"
+        android:layout_alignParentLeft='true'/>
+
+    <Button
+        android:id="@+id/So6"
+        android:text="6"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:layout_marginRight="20px"
+        android:layout_alignLeft="@id/So9"
+        android:layout_alignRight="@id/So9"
+        android:layout_below="@id/So9"
+        android:textSize="70px"
+        android:layout_alignParentRight='true'
+       />
+    <Button
+        android:id="@+id/So5"
+        android:text="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="70px"
+        android:layout_toLeftOf='@id/So6'
+        android:layout_alignBottom='@id/So6'
+        android:layout_alignTop='@id/So6'
+        android:layout_alignRight="@id/So2"
+        android:layout_alignLeft="@id/So2"
+        />
+    <Button
+        android:id="@+id/So4"
+        android:text="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:textSize="70px"
+        android:layout_toLeftOf='@id/So5'
+        android:layout_alignTop='@id/So5'
+        android:layout_alignBottom="@id/So5"
+        android:layout_alignParentLeft='true'/>
+
+        <Button
+            android:id="@+id/So9"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_below="@id/nutBS"
+            android:layout_alignLeft="@id/nutBS"
+            android:layout_alignRight="@id/nutBS"
+            android:layout_alignParentRight='true'
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="3dp"
+            android:text="9"
+            android:textSize="70px" />
+
+        <Button
+        android:id="@+id/So8"
+        android:text="8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="70px"
+        android:layout_toLeftOf='@id/So9'
+        android:layout_alignBottom='@id/So9'
+        android:layout_alignTop='@id/So9'
+        android:layout_alignRight="@id/So5"
+        android:layout_alignLeft="@id/So5"/>
+    <Button
+        android:id="@+id/So7"
+        android:text="7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:textSize="70px"
+        android:layout_toLeftOf='@id/So8'
+        android:layout_alignTop='@id/So8'
+        android:layout_alignBottom="@id/So8"
+        android:layout_alignParentLeft='true'/>
+
+        <Button
+            android:id="@+id/nutBS"
+            android:layout_width="129dp"
+            android:layout_height="62dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight='true'
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_launcher"
+            android:textSize="70px" />
+
+        <Button
+            android:id="@+id/CE"
+            android:text="CE"
+            android:layout_width="129dp"
+            android:layout_height="62dp"
+            android:textSize="70px"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf='@id/nutBS'
+
+
+        />
+</RelativeLayout>
+</LinearLayout>
